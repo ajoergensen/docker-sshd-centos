@@ -110,7 +110,7 @@ GatewayPorts {{ default .Env.SSH_GATEWAY_PORTS "no" }}
 #Banner none
 
 # override default of no subsystems
-Subsystem	sftp	/usr/lib/ssh/sftp-server
+Subsystem	sftp	/usr/libexec/openssh/sftp-server
 
 # the following are HPN related configuration options
 # tcp receive buffer polling. disable in non autotuning kernels
